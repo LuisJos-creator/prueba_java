@@ -7,6 +7,7 @@ const valor1El = document.querySelector('#valor1')
 const valor2El = document.querySelector('#valor2')
 const igualEl = document.querySelector('#igual')
 const resultadoEl = document.querySelector('#resultado')
+
 //LOAD
 
 
