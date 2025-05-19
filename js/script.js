@@ -3,7 +3,10 @@ const botonAlertEl = document.querySelector('#btnAlert')
 const botonConsoleEl = document.querySelector('#btnConsole')
 const botonConsoleAlertEl = document.querySelector('#btnConsoleAlert')
 const bodyEl = document.querySelector('body')
-
+const valor1El = document.querySelector('#valor1')
+const valor2El = document.querySelector('#valor2')
+const igualEl = document.querySelector('#igual')
+const resultadoEl = document.querySelector('#resultado')
 //LOAD
 
 
@@ -34,3 +37,11 @@ botonConsoleAlertEl.addEventListener('click',function() {
     console.log('autodestruccion pausada')
     bodyEl.classList.add('cambioazul')
 })
+igualEl.addEventListener('click',function() {
+    limpiarcolor()
+    const valor1 = parseInt(valor1El.value)
+    const valor2 = parseInt(valor2El.value)
+    const resultado = valor1 + valor2
+    resultadoEl.innerHTML = `Resultado: ${resultado}`
+})
+
