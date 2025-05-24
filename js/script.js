@@ -7,7 +7,9 @@ const valor1El = document.querySelector('#valor1')
 const valor2El = document.querySelector('#valor2')
 const igualEl = document.querySelector('#igual')
 const resultadoEl = document.querySelector('#resultado')
-
+const botonContadorEl = document.querySelector('#btncontador')
+const cuentaEl = document.querySelector('#cuenta')
+let cuenta = 0
 //LOAD
 
 
@@ -18,6 +20,12 @@ function limpiarcolor () {
         if (clase.startsWith('cambio')) {
             bodyEl.classList.remove(clase)
         }
+    })
+}
+function sumacuenta () {
+    botonContadorEl.addEventListener('click',function() {
+    cuenta + 1
+    
     })
 }
 
